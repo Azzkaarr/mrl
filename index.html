@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilesPerHr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Corinthia:wght@400;700&family=Luxurious+Roman&family=Montserrat:ital,wght@0,200;1,100;1,200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+     body{
+         margin: 0%;
+         padding: 0%;
+         
+     }
+     header{
+         width:auto;
+         height:120px;
+        background-image: linear-gradient( to left, #2E4C6D 70% ,white 30% ); 
+        
+     }
+     h3{
+         margin: 0px;
+         text-align:left;
+         padding:35px;
+         padding-left:10px;
+         font-size:40px;
+          color: black;
+          font-family: 'Luxurious Roman', cursive;
+          float: left;
+
+     }
+    ul{
+        margin: 0%;
+        position: absolute;
+        right:30%;
+        display: block;
+       top:7%;
+    }
+    li{
+        display: inline;
+        margin-left:50px;
+       font-size:22px;
+       font-family: 'Luxurious Roman', cursive;
+       color: white;
+       transition:1s;
+    }
+    li:hover{
+        background-color: white;
+        width:auto;
+        height:auto;
+        color: black;
+        border-radius: 2px;
+        padding: 10px;
+        
+    }
+     #puc{
+         width:100px;
+         position: absolute;
+         float:right;
+         padding:9px;
+         border-radius: 50%;
+         height:100px;
+         left:18% 
+        }
+        #puc1{
+            text-decoration: none;
+            color:black;
+        }
+        #puc2{
+            text-decoration: none;
+            color:white;
+        }
+        #puc2:hover{
+            color: black;
+        }
+        
+     #m1{
+         width: 70%;
+         height:480px;
+         background-color: #396EB0;
+         margin:2px;
+         text-align: center;
+         animation-name: changeback;
+         animation-duration:5s; 
+         float: left;
+         animation-iteration-count:10;
+         justify-content: center;
+          position: relative;
+
+        }
+     @keyframes changeback{
+         0%{
+         background-color:#2E4C6D ;
+         }
+        50%{
+background-color: #506D84;
+        }
+        100%{
+ background-color:#889EAF ;
+        }
+     }
+
+  
+     #art1{
+      width: 45%;
+      background-color:white;
+      height:250px;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+     }
+
+     h4{
+         color: black;
+         font-size:30px;
+         padding-bottom: 10px;
+         border-bottom: black 2px solid;
+         font-family: 'Luxurious Roman', cursive;
+     }
+     p{
+         color: black;
+         font-size: 20px;
+         font-family: 'Luxurious Roman', cursive;
+         letter-spacing: 2px;
+     }
+     span{
+         float: right;
+         position: absolute;
+         right:20px;
+         text-align: center;
+         margin: 2px;
+
+     }
+     h5{
+         font-size:25px;
+         margin: 0%; 
+         border-bottom: black 2px solid;
+         padding: 5px;
+         font-family: 'Luxurious Roman', cursive;
+        letter-spacing: 2px;
+        margin-bottom: 2px;
+     }
+     span img{
+       
+        
+         border-radius:5px;
+         border-bottom: black 2px ;
+         
+     }
+
+     #S1{
+          width:35px;
+          padding: 5px; 
+          border-radius: 50%;
+          border-bottom: black double 2px;
+     }
+     #S1:hover{
+     width:40px;
+     box-shadow:5px 0px 10px 0px rgba(0,0,0,0.5);
+     border-bottom: brown double 4px;
+     }
+    
+     @media only screen  and (max-width:1198px){
+        #puc{
+            left: 19%;
+        }
+        #m1{
+            width: 69%;
+        }
+
+
+     }
+     @media only screen  and (max-width:1148px){
+        header{
+            background-image: linear-gradient( to left, #2E4C6D 60% ,white 30% );
+        }
+        #puc{
+            left: 23%;
+        }
+        #m1{
+            width: 62%;
+        }
+        ul{
+          
+            right: 20%;
+        }
+
+         }
+        @media only screen  and (max-width:958px){
+            #puc{
+              left: 26%;
+        }
+        #m1{
+            width:58%;
+        }
+        }
+        @media only screen  and (max-width:860px){
+            header{
+            background-image: linear-gradient( to left, #2E4C6D 55% ,white 30% );
+        }
+        ul{
+            right: 10%;
+        }
+        #puc{
+            left: 28%;
+        }
+        #m1{
+            width: 54%;
+        }
+ 
+        @media only screen  and (max-width:782px){
+        #puc{
+            left: 29%;
+        }
+        #m1{
+            width: 50%;
+        }
+        }
+        @media only screen  and (max-width:722px){
+            header{
+            background-image: linear-gradient( to left, #2E4C6D 50% ,white 30% );
+            }
+            ul {
+           right: 4%;
+            }
+            #puc{
+                left: 32%;
+            }
+            #m1{
+                width: 100%;
+            }
+            #art1{
+                width: 100%;
+            }
+            span {
+    float: right;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    margin: 2px;
+    top: 118%;
+    LEFT: 8%;
+}
+
+         }
+         @media only screen  and (max-width:678px){
+             #puc{
+                 left: 40%;
+             }
+             header{
+            background-image: linear-gradient( to left, #2E4C6D 40% ,white 30% );
+            }
+          li{
+            margin-left: 10px;
+            font-size: 18px;
+            display: inline;
+          }
+         }
+         @media only screen  and (max-width:554px){
+            header{
+            background-image: linear-gradient( to left, #2E4C6D 50% ,white 20% );
+            }           
+            li{
+                list-style: none;
+                display: inline;
+                padding:2px;
+            }
+            ul{
+               
+                right:3%;
+            }
+            #puc{
+                left:47%;
+            }
+    
+         }
+         @media only screen  and (max-width:552px){
+             #puc{
+                 left:60%;
+                 width: 95px;
+                 height: 95px;
+             }
+             ul{
+                margin: 0%;
+    position: absolute;
+    right: 30%;
+    display: block;
+    top: 30%;
+    z-index: 1;
+    left: 20%;
+             }
+             li{
+                 display: inline;
+             }
+         }
+         @media only screen  and (max-width:521px){
+             li{
+                 display: block;
+             }
+             ul{
+                 top: 26%;
+             }
+         }
+         @media only screen  and (max-width:464px){
+             h3{
+                 font-size: 30px;
+             }
+             li{
+                 display: block;
+             }
+         }
+     @media only screen  and (max-width:347px) {
+        ul{
+                 top: 26%;
+             }
+    header{
+        width: auto;
+    height: 120px;
+    background-image: linear-gradient( to left, #2E4C6D 35% ,white 30% );
+    }
+    h3{
+        margin: 0px;
+    text-align: left;
+    padding: 35px;
+    padding-left: 10px;
+    font-size: 30px;
+    color: black;
+    font-family: 'Luxurious Roman', cursive;
+    float: left;
+    position: absolute;
+    top: 5%;
+    }
+    #puc {
+    width: 80px;
+    position: absolute;
+    float: right;
+    padding: 9px;
+    border-radius: 50%;
+    height: 80px;
+    left: 18%;
+    left: 67%;
+    TOP: 5%;
+}
+
+ul {
+    margin: 0%;
+    position: absolute;
+    right: 30%;
+    display: block;
+    top: 30%;
+    z-index: 1;
+    left: 20%;
+}
+li {
+    display:inline;
+    margin-left: 50px;
+    font-size: 22px;
+    font-family: 'Luxurious Roman', cursive;
+    color: white;
+    transition: 1s;
+}
+#m1 {
+    width: 100%;
+    height: 480px;
+    background-color: #396EB0;
+    margin: 2px;
+    text-align: center;
+    animation-name: changeback;
+    animation-duration: 5s;
+    float: left;
+    animation-iteration-count: 10;
+    justify-content: center;
+    position: relative;
+}
+
+
+span {
+    float: right;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    margin: 2px;
+    top:118%;
+    LEFT: 8%;
+}
+#art1 {
+    width: 100%;
+    background-color: white;
+    height: 250px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+}
+@media only screen  and (max-width:338px) {
+    header{
+        width: auto;
+    height: 120px;
+    background-image: linear-gradient( to left, #2E4C6D 35% ,white 30% );
+    }
+    ul{
+                 top: 26%;
+             }
+    h3{
+        margin: 0px;
+    text-align: left;
+    padding: 35px;
+    padding-left: 10px;
+    font-size: 30px;
+    color: black;
+    font-family: 'Luxurious Roman', cursive;
+    float: left;
+    position: absolute;
+    top: 5%;
+    }
+    #puc {
+    width: 80px;
+    position: absolute;
+    float: right;
+    padding: 9px;
+    border-radius: 50%;
+    height: 80px;
+    left: 18%;
+    left: 67%;
+    TOP: 5%;
+}
+
+ul {
+    margin: 0%;
+    position: absolute;
+    right: 30%;
+    display: block;
+    top: 30%;
+    z-index: 1;
+    left: 10px;
+}
+li {
+    display:inline;
+    margin-left: 50px;
+    font-size: 22px;
+    font-family: 'Luxurious Roman', cursive;
+    color: white;
+    transition: 1s;
+}
+#m1 {
+    width: 100%;
+    height: 480px;
+    background-color: #396EB0;
+    margin: 2px;
+    text-align: center;
+    animation-name: changeback;
+    animation-duration: 5s;
+    float: left;
+    animation-iteration-count: 10;
+    justify-content: center;
+    position: relative;
+}
+
+
+span {
+    float: right;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    margin: 2px;
+    top: 118%;
+    LEFT: 8%;
+}
+#art1 {
+    width: 100%;
+    background-color: white;
+    height: 250px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+ul{
+                 top: 26%;
+             }
+}
+@media only screen  and (max-width:268px){
+    h3{
+        font-size: 22px;
+
+    }
+    #puc{
+        width:20% ;
+        height: 20%;
+        left: 68%;
+
+    }
+    ul{
+                 top: 26%;
+             }
+}
+ }
+  
+    </style>
+</head>
+<body>
+    <header>
+    <h3>
+      <a id="puc1" href="https://www.youtube.com/channel/UCBBf76weOf-4p_cIzOd71hg">MilesPerHr</a>  
+    </h3>
+    
+      <a href="https://www.youtube.com/channel/UCBBf76weOf-4p_cIzOd71hg"> <img id="puc" src="puc.jpg" alt=""></a>  
+       
+      <ul>
+          <li><a id="puc2" href="https://www.youtube.com/channel/UCBBf76weOf-4p_cIzOd71hg" >Playlists</a></li>
+          <li><a  id="puc2"  href="https://www.youtube.com/channel/UCBBf76weOf-4p_cIzOd71hg" >video</a></li>
+          <li><a  id="puc2"  href="https://www.youtube.com/channel/UCBBf76weOf-4p_cIzOd71hg" >Home</a></li>
+
+      </ul>
+        
+    </header>
+    <main id="m1">
+    <article id="art1">
+    <h4>car presenter</h4>
+    <p>Here you will find the most luxurious presentations with driving test</p>
+    </article>
+    </main>
+    <span>
+   <a href="https://www.youtube.com/channel/UCBBf76weOf-4p_cIzOd71hg"><img src="puc1.jpg" width="100%" height="250px" ></a> 
+   <h5>MilesPerHr</h5>
+   <div id="d1">
+   <a  href="https://www.youtube.com/channel/UCBBf76weOf-4p_cIzOd71hg"> <img id="S1" src="1.png"></a>
+   <a  href="https://www.instagram.com/milesperhr/"> <img id="S1" src="2.png"></a>
+   <a  href="https://web.facebook.com/milesperhr/"> <img id="S1" src="3.png"></a>
+   </div>
+    </span>
+
+    
+</body>
+</html>
